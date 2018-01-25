@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script type="text/javascript">
+  <!--
+  function show_selected_item_val($item){
+
+    document.getElementById("img").src= "./results/" + $item.value + "011.png";
+  }
+  //-->
+  </script>
+ 
+ </HEAD>
+ <BODY>
+   <form method="post" action="#">
+   <h3>Example8</h3>
+   
+   <input type="radio" name="radio[]" id="radio_1" value="groundtruth/" checked="checked" onclick="show_selected_item_val(this)" />
+   GroundTruth
+   <input type="radio" name="radio[]" id="radio_2" value="admm_srcnn/" onclick="show_selected_item_val(this)"/>
+   Admm+SRCNN
+   <input type="radio" name="radio[]" id="radio_3" value="flexisp_srcnn/" onclick="show_selected_item_val(this)"/>
+   Flexisp+SRCNN
+   <input type="radio" name="radio[]" id="radio_4" value="sem_srcnn/" onclick="show_selected_item_val(this)"/>
+   sem+SRCNN
+   <input type="radio" name="radio[]" id="radio_5" value="demosaicnet_srcnn/" onclick="show_selected_item_val(this)"/>
+   DemosaicNet+SRCNN
+   <input type="radio" name="radio[]" id="radio_6" value="ours/" onclick="show_selected_item_val(this)"/>
+   Ours
+   </p>
+   <img src="./results/groundtruth/011.png" id="img">
+
+   </div>
+   </form>
+ </BODY>
+</HTML>
